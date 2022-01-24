@@ -1,0 +1,34 @@
+.text-button{
+    margin: 2vh 2vw 4vh 2vw;  
+    z-index: 0;
+    padding-bottom:7vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: flex-start;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+[class*=".heading-text"]{
+    padding: 2vh 0;
+    font-weight: 600;
+}
+
+.intro-text{
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+.big-text{
+    font-size: 1.7rem;
+}
+
+@media (max-width: 1024px) {
+    .big-text{
+        font-size: 1rem;
+    }
+
+  }

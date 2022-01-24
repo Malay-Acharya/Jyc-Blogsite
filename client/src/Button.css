@@ -1,0 +1,9 @@
+.Button{
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: rgb(254, 103, 58);
+    display: inline-block;
+    width: auto;
+    padding: 0.7vh 0.8vw;
+    margin: 1vh 0;
+}

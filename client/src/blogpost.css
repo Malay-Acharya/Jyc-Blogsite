@@ -1,0 +1,28 @@
+.blogposts{
+    margin: 3vh 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.blog-post{
+    display: flex;
+}
+
+.blog-post img{
+    max-width: 30%;
+}
+
+@media (max-width: 1024px){
+    .blog-post{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blog-post img{
+        width: auto;
+        max-height: 70vh;
+        max-width: 100%;
+    }
+}

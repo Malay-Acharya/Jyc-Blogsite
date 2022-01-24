@@ -1,0 +1,21 @@
+.footer-text{
+    font-size: 0.8rem;
+    background-color: rgb(109, 104, 104);
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    padding: 3.5vh;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.footer{
+    position: absolute;
+    bottom: -4;
+    width: 100%;
+    display: block;
+    margin-top: 4%;
+}

@@ -1,0 +1,31 @@
+.trendingview{
+    display: flex;
+    width: 31.3vw;
+    gap: 2vw;
+}
+
+.trendingbox-img img{
+    height: 18vh;
+}
+
+.heading-category{
+    font-size: 0.7rem;
+    margin-bottom: 1vh;
+}
+
+.heading-data{
+    font-size: 1rem;
+}
+
+.heading-author{
+    margin-top: 2.5vh;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .trendingview{
+        width: 90vw;
+    }
+    
+  }

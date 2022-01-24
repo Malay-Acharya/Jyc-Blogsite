@@ -1,0 +1,29 @@
+.create-form{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    width: auto;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 4vh 0;
+    margin-top: 8vh;
+    align-items: center;
+}
+
+.input-field-content{
+    height: 20vh;
+    padding: 4vh;
+}
+
+.input-field-main{
+    height: 60vh;
+    padding: 4vh;
+}
+
+@media (max-width: 1024px) {
+    .create-form{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}

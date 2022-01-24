@@ -1,0 +1,13 @@
+.logout-div{
+    margin-top: 40vh;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    gap: 2vh;
+}
+
+.logout-head{
+    font-size: 0.5rem;
+}
+
