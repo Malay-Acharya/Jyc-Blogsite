@@ -14,7 +14,7 @@ const Create = () =>{
         try{
             const name = decodedToken.name;
             const email = decodedToken.email;
-            const res = await fetch('http://localhost:1337/api/submit', {
+            const res = await fetch('https://blogittt.herokuapp.com/api/submit', {
                 method:'POST',
                 headers:{
                     'Content-Type':"application/json",
