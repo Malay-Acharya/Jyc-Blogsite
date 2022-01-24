@@ -9,7 +9,7 @@ const Blogpost=()=>{
         getdata();
     },[])
     async function getdata(){
-        const res = await fetch('hhttps://blogittt.herokuapp.com/api/getdata');
+        const res = await fetch('https://blogittt.herokuapp.com/api/getdata');
         const data = await res.json();  
         setPosts(data.data)
         
