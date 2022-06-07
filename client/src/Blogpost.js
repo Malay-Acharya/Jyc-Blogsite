@@ -9,7 +9,7 @@ const Blogpost=({clb})=>{
         getdata();
     },[])
     async function getdata(){
-        const res = await fetch('http://localhost:1337/api/getdata');
+        const res = await fetch('https://jyc-app.herokuapp.com/api/getdata');
         const data = await res.json();  
         setPosts(data.data)
         

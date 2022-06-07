@@ -14,7 +14,7 @@ const Article = () =>{
     useEffect(()=>{
         
         async function getidData(){
-            var url = new URL("https://blogittt.herokuapp.com/api/finddata/Userid=" + Params.id)
+            var url = new URL("https://jyc-app.herokuapp.com/api/finddata/Userid=" + Params.id)
             const res = await fetch(url)
             const df = await res.json();
             var frame = df.data[0]
