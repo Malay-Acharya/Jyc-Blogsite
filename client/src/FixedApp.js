@@ -1,11 +1,10 @@
 import './App.css';
 import Navbar from './Navbar';
 import Bloghead from './Bloghead';
-import Trendingbox from './Trendingbox';
 import Footer from './Footer';
-import Blogpost from './Blogpost';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Clubcard from './Clubcard';
 
 const FixedApp = () =>{
     let location = useLocation();
@@ -24,9 +23,8 @@ const FixedApp = () =>{
       </div>
       <div className='app'>
       <Bloghead/>
-      <Trendingbox/>
-      <Blogpost/>
       <Footer/>
+      
       </div>
       </>
     );

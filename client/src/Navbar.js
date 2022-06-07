@@ -42,7 +42,7 @@ const Navbar = () =>{
             <ul className="left-nav ">
                 <li>{click===0?<i className="fas fa-bars" onClick={hoveropen} ></i>:<i className="fas fa-times" onClick={hoverclose} ></i>}</li>
                 <Link to={`/`} style={{ textDecoration: 'none' ,color: "black"}}>
-                <li className='nav-head'>BlogIT</li>
+                <li className='nav-head'>JYC BLOGS</li>
                 </Link>
             </ul>
             <ul className="right-nav">
@@ -66,9 +66,6 @@ const Navbar = () =>{
                     <a className ="socials" href = "https://www.twitter.com/" target="_blank" rel='noreferrer'><li><i className="fab fa-twitter"></i></li></a>
                 </ul>
                 <li className='nav-hide-bar-2'></li>
-            </ul>
-            <ul className='search-nav'>
-                <li><i className="fas fa-search"></i></li>
             </ul>
         </nav>
     );

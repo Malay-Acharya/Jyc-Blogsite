@@ -3,13 +3,13 @@ import TextButton from "./TextButton";
 import { useEffect } from "react";
 import { useState } from "react";
 
-const Blogpost=()=>{
+const Blogpost=({clb})=>{
     const [posts, setPosts] = useState("")
     useEffect(()=>{
         getdata();
     },[])
     async function getdata(){
-        const res = await fetch('https://blogittt.herokuapp.com/api/getdata');
+        const res = await fetch('http://localhost:1337/api/getdata');
         const data = await res.json();  
         setPosts(data.data)
         
@@ -18,12 +18,15 @@ const Blogpost=()=>{
     return(
         <div className="blogposts">
             {posts.map((item)=>{
-                return(
-                <div className="blog-post" key={item._id}>                   
-                    <img src={item.image} alt="blog-img"/>
-                    <TextButton label={item.label} head={item.head} content={item.content} index={item._id} flag="yes"/>                   
-                </div>
-                );
+                if(item.club == clb){
+                    return(
+                        <div className="blog-post" key={item._id}>                   
+                            <img src={item.image} alt="blog-img"/>
+                            <TextButton label={item.label} head={item.head} content={item.content} index={item._id} flag="yes"/>                   
+                        </div>
+                        );
+                }
+                
             })}
         </div>
     );

@@ -33,6 +33,10 @@ const Article = new mongoose.Schema(
         image:{
             type: String
         },
+        club:{
+            type: String,
+            required: true
+        },
     },
     {collection:'article-data'}
 )

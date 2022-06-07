@@ -14,7 +14,7 @@ const Create = () =>{
         try{
             const name = decodedToken.name;
             const email = decodedToken.email;
-            const res = await fetch('https://blogittt.herokuapp.com/api/submit', {
+            const res = await fetch('http://localhost:1337/api/submit', {
                 method:'POST',
                 headers:{
                     'Content-Type':"application/json",
@@ -28,6 +28,7 @@ const Create = () =>{
                     content,
                     main,
                     image,
+                    club,
                 }),
             })
             const data = await res.json();
@@ -58,6 +59,7 @@ const Create = () =>{
     const[content, setContent] = useState("");
     const[main, setMain] = useState("");
     const[image,setImage] = useState("");
+    const[club,setClub] = useState("");
     return(
         <>
             <Navbar/>
@@ -124,6 +126,16 @@ const Create = () =>{
                         value={main}
                         placeholder="Article"
                         className="input-field input-field-main"
+                    />
+                </label>
+                <label htmlFor="club">
+                    Enter the club/committee for the post
+                    <input
+                        id="club"
+                        onChange={(e) => setClub(e.target.value)}
+                        value={club}
+                        placeholder="club/committee"
+                        className="input-field"
                     />
                 </label>
                 <button className="login-btn">Submit Article</button>

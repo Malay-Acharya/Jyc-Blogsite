@@ -93,6 +93,9 @@ app.post('/api/submit', async (req, res) => {
         else if(!req.body.main){
             res.json({status:'Enter a valid blog'})
         }
+        else if(!req.body.club){
+            res.json({status:'Enter a valid Club/Committee'})
+        }
         else{
         const data = await Article.create({
             name: req.body.name,
@@ -102,7 +105,8 @@ app.post('/api/submit', async (req, res) => {
             content: req.body.content,
             cat: req.body.cat,
             main: req.body.main,
-            image: req.body.image||img
+            image: req.body.image||img,
+            club: req.body.club
         })
         res.json({status:'Article submitted successfully'})
     }

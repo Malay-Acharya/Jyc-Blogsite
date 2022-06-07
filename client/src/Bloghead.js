@@ -10,7 +10,7 @@ const Bloghead = () =>{
                     <div className={item.cname} key={item.index}>
                     
                         <img src={require("./"+item.image)} alt="blog-img"/>
-                        <TextButton label={item.label} head={item.head} content={item.content} index={item.index}/>
+                        <TextButton label={item.label} head={item.head} content={item.content} index={item.index} clubnm = {item.club}/>
                     
                     </div>
                 );
