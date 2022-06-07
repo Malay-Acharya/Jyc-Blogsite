@@ -1,4 +1,4 @@
-# BlogITTT
+# JYC-BLOG-APP
 MERN stack based webapp. Register , Login and Publish Blogs.
 
 ## Dependencies and Libraries used
