@@ -39,7 +39,7 @@ const Login = () =>{
         <>
             <header className="login-header">
                 <h2 className="login-head">
-                <Link to = "/" style={{color:"#469da4", textDecoration:"none"}}>BlogIt</Link>
+                <Link to = "/" style={{color:"#469da4", textDecoration:"none"}}>JYC Blogs</Link>
                 </h2>
                 <h3 className="login-redirect">
                     Don't have an account? 
